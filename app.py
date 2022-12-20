@@ -6,7 +6,7 @@ from pymongo.errors import DuplicateKeyError
 from db import get_user, save_user
 
 app = Flask(__name__)
-app.secret_key = "sfdjkafnk"
+app.secret_key = "my secret key"
 socketio = SocketIO(app)
 login_manager = LoginManager()
 login_manager.login_view = 'login'
